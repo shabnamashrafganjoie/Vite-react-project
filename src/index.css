@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+  @font-face {
+    font-family: 'Dana';
+    src: url('./assets/fonts/Dana.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'Dana', ui-sans-serif, system-ui;
+    direction: rtl;
+    text-align: right;
+  }
