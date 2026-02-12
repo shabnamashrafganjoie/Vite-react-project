@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './components/shared/Footer';
 import Header from './components/shared/Header';
-//import Home from './pages/Home';
+import HomePage from './components/HomePage/HomePage';
 //import About from './pages/About';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -11,15 +11,14 @@ function App() {
       <div className="flex flex-col min-h-screen">
       <Header />
         <div className="flex-grow">
-          {/* <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes> */}
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes> 
         </div>
 
         <Footer />
       </div>
-    </Router>
+     </Router>
   );
 }
 

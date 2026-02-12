@@ -1,5 +1,6 @@
 import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
-import { build } from "vite";
+import { useEffect } from "react";
+//import { build } from "vite";
 
 
 const initialState = {
@@ -8,12 +9,18 @@ const initialState = {
     error: "",
 };
 
-
+// ********this is better for big projects**********
+// const fetchProducts = createAsyncThunk("products/fetchProducts",async()=>{
+//     const res = await fetch("https://dummyjson.com/products");
+//     const data = await res.json();
+//     return data.products || [];
+useEffect
 const fetchProducts = createAsyncThunk("products/fetchProducts",()=>{
-    return fetch("https://fakestoreapi.com/products")
-.then((res) => res.jason())
-.then((data) => data);
+    return fetch("https://dummyjson.com/products")
+.then((res) => res.json())
+.then((data) => data.products);
  });
+
  const productsSlice = createSlice({
     name: "products",
     initialState,
