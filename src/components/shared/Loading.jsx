@@ -9,7 +9,7 @@ function Loading() {
 <Circles
 height="80"
 width="80"
-color="pink"
+color="red"
 ariaLabel="Clock-Loader"
 wrapperStyle={{}}
 wrapperClass=""
