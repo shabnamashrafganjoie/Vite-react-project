@@ -4,13 +4,13 @@ import { Circles } from "react-loader-spinner";
 
 function Loading() {
     return (
-        <div className="w-full h-screen justify-center items-center flex">
+        <div className="fixed inset-0 flex justify-center items-center bg-white z-50">
 
 <Circles
 height="80"
 width="80"
 color="red"
-ariaLabel="Clock-Loader"
+ariaLabel="Circles-Loader"
 wrapperStyle={{}}
 wrapperClass=""
 visible={true}

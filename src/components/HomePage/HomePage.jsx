@@ -12,7 +12,7 @@ function HomePage() {
     },[]);
 
   return (
-<div>
+<div className="flex justify-center items-center">
 { loading ? <Loading /> : null}
 { error ? (
     <h2 className="text-red-600 text-xl text-center mt-10">{error}</h2>
